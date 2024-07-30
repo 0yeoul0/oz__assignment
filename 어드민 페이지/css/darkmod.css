@@ -1,0 +1,78 @@
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode .container,
+.dark-mode .form-control,
+.dark-mode .form-select,
+.dark-mode .table,
+.dark-mode .table th,
+.dark-mode .table td,
+.dark-mode .page-link,
+.dark-mode form,
+.dark-mode table {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+.dark-mode table th,
+.dark-mode table td {
+  border-top: 1px solid #444;
+}
+
+.dark-mode input[type="text"],
+.dark-mode input[type="password"],
+.dark-mode input[type="date"],
+.dark-mode input[type="email"],
+.dark-mode select {
+  background-color: #333;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+.dark-mode select option {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+.dark-mode .btn,
+.dark-mode .btn-primary,
+.dark-mode .log-in__btn {
+  background-color: #333;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+.dark-mode .btn:active,
+.dark-mode .btn-primary:hover,
+.dark-mode .log-in__btn:hover {
+  background-color: #555;
+  border-color: #666;
+}
+
+.dark-mode a {
+  color: #bb86fc;
+}
+
+.dark-mode .clock-container {
+  color: burlywood;
+}
+
+.dark-mode .log-in__btn {
+  background: linear-gradient(
+    0deg,
+    rgba(100, 100, 100, 1) 0%,
+    rgba(70, 70, 70, 1) 100%
+  );
+}
+
+.dark-mode .log-in__btn:hover {
+  background: transparent;
+  box-shadow: none;
+}
+
+.dark-mode .log-in__btn span:hover {
+  color: rgba(2, 126, 251, 1);
+}
