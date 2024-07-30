@@ -1,0 +1,97 @@
+.log-in__btn {
+  display: inline-block;
+  background: rgb(0, 172, 238);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 172, 238, 1) 0%,
+    rgba(2, 126, 251, 1) 100%
+  );
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  overflow: hidden; /* 변경된 부분: overflow: hidden으로 설정하여 효과적으로 애니메이션 숨김 */
+}
+
+.log-in__btn:hover {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* 애니메이션 스타일 */
+.log-in__btn:before,
+.log-in__btn:after {
+  position: absolute;
+  content: "";
+  background: rgba(2, 126, 251, 1);
+  transition: all 0.3s ease;
+}
+
+.log-in__btn:before {
+  height: 0%;
+  width: 2px;
+  right: 0;
+  top: 0;
+}
+
+.log-in__btn:after {
+  width: 0%;
+  height: 2px;
+  right: 0;
+  bottom: 0;
+}
+
+.log-in__btn:hover:before {
+  height: 100%;
+}
+
+.log-in__btn:hover:after {
+  width: 100%;
+}
+
+.log-in__btn span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: color 0.3s ease;
+}
+
+.log-in__btn span:hover {
+  color: rgba(2, 126, 251, 1);
+}
+
+.log-in__btn span:before,
+.log-in__btn span:after {
+  position: absolute;
+  content: "";
+  background: rgba(2, 126, 251, 1);
+  transition: all 0.3s ease;
+}
+
+.log-in__btn span:before {
+  width: 2px;
+  height: 0%;
+  left: 0;
+  bottom: 0;
+}
+
+.log-in__btn span:after {
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+}
+
+.log-in__btn span:hover:before {
+  height: 100%;
+}
+
+.log-in__btn span:hover:after {
+  width: 100%;
+}
