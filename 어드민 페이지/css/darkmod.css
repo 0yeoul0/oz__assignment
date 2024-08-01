@@ -76,3 +76,15 @@ body.dark-mode {
 .dark-mode .log-in__btn span:hover {
   color: rgba(2, 126, 251, 1);
 }
+
+.dark-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: rgb(164, 199, 255);
+  color: white;
+  border-radius: 5px;
+}
