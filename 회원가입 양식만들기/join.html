@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join</title>
+
+    <link rel="stylesheet" href="css/join.css" />
+    <link rel="stylesheet" href="css/darkmod.css" />
+  </head>
+  <body>
+    <button id="toggle-dark-mode" class="dark-btn">다크 모드</button>
+    <form action="login.html" onsubmit="return validateForm()">
+      <table>
+        <tr>
+          <td><h2>회원가입</h2></td>
+        </tr>
+        <tr>
+          <td>아이디*</td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="text"
+              class="text"
+              id="username"
+              pattern="[A-Za-z0-9]{8,}"
+              title="아이디는 최소 8글자와 숫자만 입력할 수있습니다."
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>비밀번호*</td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="password"
+              class="text"
+              id="password"
+              pattern="(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}"
+              title="비밀번호는 최소 8자 이상, 최소 하나의 숫자, 문자, 특수문자를 포함해야 합니다."
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>비밀번호 확인*</td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="password"
+              class="text"
+              id="confirm-password"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>이름*</td>
+        </tr>
+        <tr>
+          <td><input type="text" class="text" id="name" required /></td>
+        </tr>
+        <tr>
+          <td>생년월일*</td>
+        </tr>
+        <tr>
+          <td><input type="date" class="text" id="birthdate" required /></td>
+        </tr>
+        <tr>
+          <td>이메일*</td>
+        </tr>
+        <tr>
+          <td><input type="email" class="email" id="email" required /></td>
+        </tr>
+        <tr>
+          <td>성별*</td>
+        </tr>
+        <tr>
+          <td>
+            <select id="gender" class="text" required>
+              <option value="" disabled selected>성별을 선택하세요</option>
+              <option value="male">남성</option>
+              <option value="female">여성</option>
+              <option value="other">기타</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" value="가입하기" class="btn" />
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <script src="js/join.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/darkmod.js"></script>
+  </body>
+</html>
